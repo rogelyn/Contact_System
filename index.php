@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+	<meta charset="utf-8">
+</head>
 <body>
+	<center>
 		<h1>Contact System</h1>
 		<h1>Login</h1>
 
@@ -10,7 +13,7 @@
 			<input type = "text" id = 'userEmail' name = 'userEmail'> </input><br>
 			<br>
 			<label>Password:</label>
-			<input type = "text" id = 'password' name = "password"> </input><br>
+			<input type = "password" id = 'password' name = "password"> </input><br>
 			<br>
 			<button type="submit" id = "btn" value="home">Login</button>
 		</form>
@@ -18,5 +21,6 @@
 		<form action = "register_db.php" method = 'POST'>
 			<button type="submit" id = "btn" value="register">Register</button>
 		</form>
+	</center>
 </body>
 </html>
