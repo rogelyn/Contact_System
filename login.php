@@ -14,18 +14,9 @@ $conn = mysql_connect(DB_SERVER , DB_USER, DB_PASSWORD);
 if (!$conn) {
     die('Could not connect: ' . mysql_error());
 }
-// if($conn->connect_error){
-// 		die("Connection failed".$conn->connect_error);
-// }
-
 echo "connected successfully";
 
 mysql_select_db(DB_DATABASE, $conn) or die(mysql_error());
-
-// $userEmail = stripslashes($userEmail);
-// $password = stripslashes($password);
-// $userEmail = $conn->real_escape_string($userEmail);
-// $password = $conn->real_escape_string($password);
 
 //Query username and password for user
 $result = mysql_query("SELECT * FROM users WHERE userEmail = '$userEmail' AND password = '$password'")
